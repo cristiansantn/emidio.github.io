@@ -1,0 +1,290 @@
+/* ESTILOS GERAIS - DESIGN ARTÍSTICO E MINIMALISTA REFINADO */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; 
+    color: #4a4a4a;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    line-height: 1.75;
+    font-size: 15px;
+    opacity: 0; /* Para animação de carregamento */
+    transition: opacity 1s ease-in-out; /* Para animação de carregamento */
+}
+
+body.loaded { /* Para animação de carregamento */
+    opacity: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 680px;
+    box-sizing: border-box;
+}
+
+/* ESTILO UNIFICADO E ESPAÇAMENTO PARA SEÇÕES */
+section {
+    padding: 30px 0;
+    margin-bottom: 80px;
+    border-bottom: none;
+    opacity: 0; /* Para animação de carregamento */
+    transform: translateY(20px); /* Para animação de carregamento */
+    transition: opacity 0.6s ease-out 0.2s, transform 0.6s ease-out 0.2s;
+}
+
+body.loaded section { /* Para animação de carregamento */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section:last-of-type {
+    margin-bottom: 40px;
+}
+
+/* --- SEÇÃO DO CONTADOR --- */
+.countdown-section {
+    padding-top: 0;
+    margin-bottom: 100px;
+}
+
+.countdown-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #888;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+#countdown-timer {
+    font-size: 2.2em;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: #555;
+    text-shadow: none;
+}
+
+#countdown-timer span {
+    padding: 0 6px;
+}
+
+/* --- SEÇÃO MY LOVE --- */
+.my-love-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 6em;
+    color: #333;
+    line-height: 0.8;
+    margin-bottom: 5px;
+}
+
+.my-love-title .only-love {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.18em;
+    color: #777;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.my-love-section .quote {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    line-height: 1.9;
+    font-weight: 300;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.my-love-section img {
+    max-width: 90%; 
+    height: auto;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08); 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: inline-block; 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* --- SEÇÃO CARTA --- */
+.letter-section {
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 30px; 
+}
+
+.letter-header { /* Removido do seu HTML, mas mantendo o estilo caso queira readicionar */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.letter-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 20px;
+    border-bottom: none;
+    padding-bottom: 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.letter-info strong {
+    font-weight: 400;
+    color: #666;
+}
+
+.letter-body {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7em;
+    color: #4a4a4a;
+    line-height: 1.9;
+    padding: 20px 0;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; 
+    font-weight: 400;
+}
+
+.letter-body p {
+    margin-top: 0; 
+    margin-bottom: 0.4em; /* Espaçamento reduzido entre parágrafos da carta */
+    text-indent: 0; 
+}
+
+.letter-body p + p { 
+    text-indent: 2.5em; 
+}
+
+/* --- SEÇÃO DA IMAGEM APÓS A CARTA (Snoopy) --- */
+.image-after-letter {
+    text-align: center;
+    padding: 10px 0; 
+    margin-bottom: 40px; 
+}
+
+.image-after-letter img {
+    max-width: 200px;   
+    height: auto;
+    border-radius: 0; 
+    border: none;       
+    box-shadow: none;   
+    margin-top: 10px;   
+    transition: transform 0.3s ease-in-out;
+}
+
+/* --- SEÇÃO FINALIZAÇÃO --- */
+.finalization-section .names {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5em;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.finalization-section .date-text { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 15px; 
+    min-height: 0.5em; 
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* Container do Mosaico de Imagens na Seção de Finalização */
+.finalization-section .image-mosaic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas para o layout de 4 imagens */
+    grid-auto-rows: minmax(180px, auto);   /* Altura base de cada "linha" do grid. Ajuste se precisar. */
+    gap: 10px; 
+    margin-top: 20px;
+    margin-bottom: 30px; 
+}
+
+/* Estilos para as Imagens DENTRO do Mosaico */
+.finalization-section .image-mosaic img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 4px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease-in-out;
+    margin: 0;
+}
+
+/* Layout "Aleatório Geométrico" para as 4 IMAGENS */
+.finalization-section .image-mosaic img:nth-child(1) {
+    grid-column: 1 / span 1; 
+    grid-row: 1 / span 2;    
+}
+
+.finalization-section .image-mosaic img:nth-child(2) {
+    grid-column: 2 / span 1; 
+    grid-row: 1 / span 1;    
+}
+
+.finalization-section .image-mosaic img:nth-child(3) {
+    grid-column: 2 / span 1; 
+    grid-row: 2 / span 1;    
+}
+
+.finalization-section .image-mosaic img:nth-child(4) {
+    grid-column: 1 / span 2; 
+    grid-row: 3 / span 1;    
+    /* Se quiser que esta imagem larga tenha uma altura diferente da base (180px do grid-auto-rows): */
+    /* height: 200px; */ 
+}
+
+.finalization-section .thank-you-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+/* EFEITO HOVER COMUM PARA IMAGENS SELECIONADAS */
+.my-love-section img:hover,
+.image-after-letter img:hover,
+.finalization-section .image-mosaic img:hover {
+    transform: scale(1.03); 
+}
+
+/* --- RODAPÉ --- */
+footer {
+    padding: 40px 0 0 0;
+    font-size: 0.8em;
+    color: #aaa;
+    font-weight: 300;
+}
+
+.footer-heart {
+    color: #ccc;
+    font-size: 1em;
+}
